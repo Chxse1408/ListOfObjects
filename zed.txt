@@ -1,0 +1,28 @@
+﻿private static void Main(string[] args)
+        {
+            GetInfo(string, int, bool, VideoGame.genres);
+        }
+
+        private static void GetInfo(string nameOfGame, int yearOfRelease, bool isRare, VideoGame.genres genres)
+        {
+            Console.WriteLine("What is the name of your game?");
+            Console.Write("Name: ");
+            nameOfGame = Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("What is the release year of your game?");
+            Console.Write("Year: ");
+            yearOfRelease = Convert.ToInt32(Console.ReadLine());
+            Console.Clear();
+            Console.WriteLine("Is this a rare game?");
+            Console.Write("(Y/N): ");
+            string isRRare = Console.ReadLine();
+            if (isRRare == "Y")
+            {
+                isRare = true;
+            }
+            else
+            {
+                isRare = false;
+            }
+            Console.Clear();
+        }
